@@ -31,21 +31,29 @@ No backend server, no database, no cloud deployment required.
 ## 📁 Project Structure
 
 
-
-
-
-Tech Stack
-
-  Python 3.11
-  Streamlit – UI
-  pandas – data processing
-  openpyxl – Excel read/write
-
-
 excelUtility/
 ├── excel_merge_app.py
 ├── requirements.txt
 └── README.md
+
+
+---
+
+## 🧩 Prerequisites
+
+- Python **3.10+** (recommended: 3.11)
+- `pip` installed
+- macOS / Linux / Windows
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1️⃣ Clone or Create Project Folder
+
+```bash
+mkdir excelUtility
+cd excelUtility
 
 Clone or Create Project Folder
   mkdir excelUtility
