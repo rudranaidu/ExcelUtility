@@ -1,5 +1,3 @@
-# ExcelUtility
-
 Tech Stack
 
   Python 3.11
