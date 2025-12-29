@@ -77,3 +77,18 @@ Accessing the App in Browser
 
 
 
+excelUtility/
+│
+├── data/
+│   ├── employee_master.xlsx     ← constants
+│   ├── wage_rules.json          ← configuration
+│   └── generated_reports/
+│       ├── attendance/
+│       └── wages/
+│
+├── transformers/
+│   ├── attendance.py
+│   └── wages.py   ← (we will build)
+│
+└── utils/
+    └── excel_writer_wages.py  ← (we will build)
