@@ -92,3 +92,7 @@ excelUtility/
 │
 └── utils/
     └── excel_writer_wages.py  ← (we will build)
+
+For creating installer
+
+pip install pyinstaller
