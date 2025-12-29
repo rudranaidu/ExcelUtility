@@ -96,3 +96,5 @@ excelUtility/
 For creating installer
 
 pip install pyinstaller
+
+pyi-makespec desktop/launcher.py --name ContractLabourApp --onefile
