@@ -1,0 +1,16 @@
+{
+  "daily_wages": {
+    "UNSKILLED": 476.33,
+    "SEMI SKILLED": 567.58,
+    "SKILLED": 690.42
+  },
+  "pf": {
+    "employee": 0.12,
+    "employer": 0.13
+  },
+  "esi": {
+    "employee": 0.0075,
+    "employer": 0.0325
+  }
+}
+
