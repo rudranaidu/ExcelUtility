@@ -1,0 +1,60 @@
+1 Install Python
+
+  Download and install from:
+  👉 https://www.python.org/downloads/windows/
+  
+  During installation:
+  ☑ Check “Add Python to PATH”
+  ☑ Choose Customize → pip included
+
+python --version
+pip --version
+
+2  Copy your project
+
+Get your project onto Windows:
+
+git clone ...
+or
+
+copy zip and extract
+
+Go into project folder:
+  cd ContractLabourProject
+
+3  Create virtual environment
+    python -m venv winenv
+    winenv\Scripts\activate
+   (winenv) C:\ContractLabourProject>
+
+4  Install dependencies
+   pip install -r requirements.txt
+   pip install pyinstaller 
+
+   pyinstaller --version
+
+5  Build the Windows .exe
+    pyinstaller desktop\launcher.py --name ContractLabourApp --onefile --noconsole
+
+    After a minute you will get:
+      dist\ContractLabourApp.exe
+
+6. Test the exe
+    Double-click:
+       dist\ContractLabourApp.exe
+
+7. Prepare install folder
+    Create folder: ContractLabourApp-Windows
+        Inside it put:
+           ContractLabourApp.exe
+            README.txt
+Example README.txt:
+   1. Extract this zip
+   2. Double-click ContractLabourApp.exe
+   3. No installation required
+
+8. Zip for delivery
+   Right click folder → Send To → Compressed (zipped) folder
+    ContractLabourApp-Windows.zip
+
+
