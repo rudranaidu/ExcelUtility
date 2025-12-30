@@ -1,0 +1,52 @@
+ContractLabourApp-Mac.zip
+└── ContractLabourApp/
+    ├── run.command        ← double-click launcher
+    ├── venv/             ← full Python runtime + deps
+    ├── app/              ← your project files
+    └── data/
+
+1️⃣ Create isolated runtime folder
+From your project root: 
+    mkdir mac_bundle
+    python -m venv mac_bundle/venv
+    source mac_bundle/venv/bin/activate
+    pip install -r requirements.txt
+
+2️⃣ Copy your app into bundle
+   mkdir mac_bundle/app
+   cp -R app.py transformers repositories utils data mac_bundle/app/
+
+3️⃣ Create Mac launcher
+  Create file:
+  mac_bundle/run.command
+    #!/bin/bash
+  DIR="$(cd "$(dirname "$0")" && pwd)"
+  source "$DIR/venv/bin/activate"
+  cd "$DIR/app"
+  streamlit run app.py
+
+Make it executable:
+   cd mac_bundle
+   ./run.command
+
+Browser should open with your app.
+
+5️⃣ Create client ZIP
+   cd ..
+  zip -r ContractLabourApp-Mac.zip mac_bundle
+
+
+Client Experience
+
+Download ZIP
+
+Extract
+
+Double-click run.command
+
+Browser opens with the application
+
+No Python install.
+No admin rights.
+No errors.
+
